@@ -1,0 +1,436 @@
+/* ==========================================
+   Employee Operations - Sidebar
+========================================== */
+
+.eo-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 250px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+
+    border-right: 1px solid #e5e7eb;
+
+    box-sizing: border-box;
+
+    z-index: 1000;
+
+    overflow-y: auto;
+}
+
+
+/* ==========================================
+   Brand
+========================================== */
+
+.eo-sidebar-brand {
+    height: 82px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 24px;
+
+    border-bottom: 1px solid #eef0f3;
+
+    flex-shrink: 0;
+}
+
+.eo-sidebar-logo {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 12px;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.18);
+}
+
+.eo-sidebar-brand h2 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    line-height: 20px;
+}
+
+.eo-sidebar-brand span {
+    color: #6b7280;
+
+    font-size: 11px;
+
+    line-height: 16px;
+}
+
+
+/* ==========================================
+   Navigation
+========================================== */
+
+.eo-sidebar-nav {
+    flex: 1;
+
+    padding: 28px 14px 20px;
+}
+
+.eo-nav-title {
+    margin: 0 0 10px;
+
+    padding: 0 12px;
+
+    color: #9ca3af;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+}
+
+
+/* ==========================================
+   Navigation Link
+========================================== */
+
+.eo-nav-link {
+    position: relative;
+
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 4px;
+
+    padding: 0 12px;
+
+    border-radius: 8px;
+
+    color: #4b5563;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.eo-nav-link:hover {
+    background: #f5f7fb;
+
+    color: #1f2937;
+}
+
+
+/* ==========================================
+   Active Link
+========================================== */
+
+.eo-nav-link.active {
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-weight: 600;
+}
+
+.eo-nav-link.active::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 8px;
+
+    width: 3px;
+    height: 29px;
+
+    background: #2563eb;
+
+    border-radius: 0 4px 4px 0;
+}
+
+
+/* ==========================================
+   Icons
+========================================== */
+
+.eo-nav-icon {
+    width: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 7px;
+
+    color: #6b7280;
+
+    font-size: 17px;
+}
+
+.eo-nav-link.active .eo-nav-icon {
+    color: #2563eb;
+}
+
+
+/* ==========================================
+   Footer
+========================================== */
+
+.eo-sidebar-footer {
+    padding: 15px 14px 18px;
+
+    border-top: 1px solid #eef0f3;
+
+    flex-shrink: 0;
+}
+
+
+/* ==========================================
+   Profile
+========================================== */
+
+.eo-profile {
+    display: flex;
+    align-items: center;
+
+    padding: 10px;
+
+    margin-bottom: 10px;
+
+    border-radius: 9px;
+
+    background: #f8fafc;
+}
+
+.eo-profile-avatar {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #dbeafe;
+
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.eo-profile-details {
+    min-width: 0;
+
+    margin-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.eo-profile-details strong {
+    color: #1f2937;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.eo-profile-details span {
+    margin-top: 2px;
+
+    color: #9ca3af;
+
+    font-size: 10px;
+}
+
+
+/* ==========================================
+   Sign Out
+========================================== */
+
+.eo-signout {
+    width: 100%;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 11px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #6b7280;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.eo-signout span {
+    width: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 7px;
+
+    font-size: 17px;
+}
+
+.eo-signout:hover {
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+/* ==========================================
+   Scrollbar
+========================================== */
+
+.eo-sidebar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.eo-sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.eo-sidebar::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+
+    border-radius: 10px;
+}
+
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media (max-width: 700px) {
+
+    .eo-sidebar {
+        width: 220px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .eo-sidebar {
+        width: 70px;
+    }
+
+    .eo-sidebar-brand {
+        justify-content: center;
+
+        padding: 0;
+    }
+
+    .eo-sidebar-brand > div:last-child {
+        display: none;
+    }
+
+    .eo-sidebar-nav {
+        padding: 25px 9px;
+    }
+
+    .eo-nav-title {
+        display: none;
+    }
+
+    .eo-nav-link {
+        justify-content: center;
+
+        padding: 0;
+    }
+
+    .eo-nav-icon {
+        margin: 0;
+    }
+
+    .eo-nav-label {
+        display: none;
+    }
+
+    .eo-nav-link.active::before {
+        display: none;
+    }
+
+    .eo-sidebar-footer {
+        padding: 12px 8px;
+    }
+
+    .eo-profile {
+        justify-content: center;
+
+        padding: 8px;
+    }
+
+    .eo-profile-details {
+        display: none;
+    }
+
+    .eo-signout {
+        justify-content: center;
+
+        padding: 0;
+    }
+
+    .eo-signout span {
+        margin: 0;
+    }
+
+    .eo-signout {
+        font-size: 0;
+    }
+
+    .eo-signout span {
+        font-size: 17px;
+    }
+}

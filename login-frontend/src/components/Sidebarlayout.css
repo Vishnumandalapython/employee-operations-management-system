@@ -1,0 +1,33 @@
+.eo-app-layout {
+    min-height: 100vh;
+
+    background: #f7f9fc;
+}
+
+.eo-main-content {
+    min-height: 100vh;
+
+    margin-left: 250px;
+
+    box-sizing: border-box;
+}
+
+
+/* Tablet */
+
+@media (max-width: 800px) {
+
+    .eo-main-content {
+        margin-left: 220px;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+    .eo-main-content {
+        margin-left: 72px;
+    }
+}

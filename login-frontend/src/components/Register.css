@@ -1,0 +1,400 @@
+```css
+/* ================================
+   Register Page
+================================ */
+
+.register-page {
+    min-height: 100vh;
+    display: flex;
+    background: #f7f9fc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================================
+   Left Branding
+================================ */
+
+.register-brand {
+    width: 48%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #172554 0%,
+        #1e3a8a 50%,
+        #2563eb 100%
+    );
+
+    color: white;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.register-brand-content {
+    max-width: 500px;
+}
+
+.register-logo {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-bottom: 28px;
+}
+
+.register-brand h1 {
+    margin: 0 0 18px;
+
+    font-size: 38px;
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+.register-brand-description {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.register-features {
+    margin-top: 42px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.register-feature {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.register-feature span {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.register-feature p {
+    margin: 0;
+
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* ================================
+   Right Section
+================================ */
+
+.register-section {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+
+    box-sizing: border-box;
+}
+
+.register-card {
+    width: 100%;
+    max-width: 460px;
+}
+
+
+/* ================================
+   Header
+================================ */
+
+.register-header {
+    margin-bottom: 32px;
+}
+
+.register-eyebrow {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #2563eb;
+}
+
+.register-header h2 {
+    margin: 0 0 10px;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    color: #111827;
+}
+
+.register-header p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #6b7280;
+}
+
+
+/* ================================
+   Form
+================================ */
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.register-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.register-field label {
+    font-size: 13px;
+    font-weight: 600;
+
+    color: #374151;
+}
+
+.register-field input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 14px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.register-field input::placeholder {
+    color: #9ca3af;
+}
+
+.register-field input:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* ================================
+   Show Password
+================================ */
+
+.show-password {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    cursor: pointer;
+
+    width: fit-content;
+
+    font-size: 13px;
+    color: #4b5563;
+}
+
+.show-password input {
+    width: 15px;
+    height: 15px;
+
+    cursor: pointer;
+
+    accent-color: #2563eb;
+}
+
+
+/* ================================
+   Message
+================================ */
+
+.register-message {
+    padding: 11px 13px;
+
+    border-radius: 7px;
+
+    background: #eff6ff;
+
+    border: 1px solid #bfdbfe;
+
+    color: #1d4ed8;
+
+    font-size: 13px;
+}
+
+
+/* ================================
+   Register Button
+================================ */
+
+.register-button {
+    width: 100%;
+
+    padding: 13px 16px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.1s ease;
+}
+
+.register-button:hover {
+    background: #1d4ed8;
+}
+
+.register-button:active {
+    transform: translateY(1px);
+}
+
+
+/* ================================
+   Login Link
+================================ */
+
+.register-login {
+    margin-top: 26px;
+
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+    font-size: 13px;
+
+    color: #6b7280;
+}
+
+.register-login a {
+    color: #2563eb;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.register-login a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================
+   Responsive
+================================ */
+
+@media (max-width: 900px) {
+
+    .register-brand {
+        width: 42%;
+        padding: 35px;
+    }
+
+    .register-brand h1 {
+        font-size: 30px;
+    }
+
+    .register-section {
+        padding: 30px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .register-page {
+        display: block;
+    }
+
+    .register-brand {
+        width: 100%;
+        min-height: auto;
+
+        padding: 35px 25px;
+    }
+
+    .register-brand h1 {
+        font-size: 28px;
+    }
+
+    .register-brand-description {
+        font-size: 14px;
+    }
+
+    .register-features {
+        margin-top: 25px;
+        gap: 14px;
+    }
+
+    .register-section {
+        padding: 40px 22px;
+    }
+
+    .register-header h2 {
+        font-size: 28px;
+    }
+}
+```
