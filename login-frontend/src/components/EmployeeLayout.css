@@ -1,0 +1,29 @@
+.employee-app-layout {
+    min-height: 100vh;
+
+    background: #f7f9fc;
+}
+
+.employee-main-content {
+    min-height: 100vh;
+
+    margin-left: 250px;
+
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 700px) {
+
+    .employee-main-content {
+        margin-left: 220px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .employee-main-content {
+        margin-left: 70px;
+    }
+}

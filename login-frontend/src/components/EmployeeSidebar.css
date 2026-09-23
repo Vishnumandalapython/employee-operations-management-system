@@ -1,0 +1,314 @@
+/* ================================
+   Employee Sidebar
+================================ */
+
+.employee-sidebar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 250px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+
+    border-right: 1px solid #e5e7eb;
+
+    z-index: 1000;
+
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   Brand
+================================ */
+
+.employee-sidebar-brand {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 24px 20px;
+
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.employee-sidebar-logo {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.employee-sidebar-brand h2 {
+    margin: 0;
+
+    font-size: 17px;
+
+    color: #111827;
+}
+
+.employee-sidebar-brand span {
+    display: block;
+
+    margin-top: 2px;
+
+    font-size: 12px;
+
+    color: #6b7280;
+}
+
+
+/* ================================
+   Navigation
+================================ */
+
+.employee-sidebar-nav {
+    flex: 1;
+
+    padding: 24px 14px;
+
+    overflow-y: auto;
+}
+
+.employee-nav-title {
+    margin: 0 0 12px 10px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+    color: #9ca3af;
+}
+
+.employee-nav-link {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 5px;
+
+    padding: 11px 12px;
+
+    border-radius: 8px;
+
+    color: #4b5563;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.employee-nav-link:hover {
+    background: #f3f6fb;
+
+    color: #2563eb;
+}
+
+.employee-nav-link.active {
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-weight: 600;
+}
+
+.employee-nav-icon {
+    width: 20px;
+
+    text-align: center;
+
+    font-size: 17px;
+}
+
+.employee-nav-label {
+    flex: 1;
+}
+
+
+/* ================================
+   Footer
+================================ */
+
+.employee-sidebar-footer {
+    padding: 16px;
+
+    border-top: 1px solid #f1f5f9;
+}
+
+.employee-profile {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 14px;
+}
+
+.employee-profile-avatar {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #dbeafe;
+
+    color: #1d4ed8;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.employee-profile-details {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.employee-profile-details strong {
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    font-size: 13px;
+
+    color: #111827;
+}
+
+.employee-profile-details span {
+    margin-top: 2px;
+
+    font-size: 11px;
+
+    color: #6b7280;
+}
+
+
+/* ================================
+   Sign Out
+================================ */
+
+.employee-signout {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #6b7280;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    text-align: left;
+}
+
+.employee-signout:hover {
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+/* ================================
+   Responsive
+================================ */
+
+@media (max-width: 700px) {
+
+    .employee-sidebar {
+        width: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .employee-sidebar {
+        width: 70px;
+    }
+
+    .employee-sidebar-brand {
+        justify-content: center;
+
+        padding: 20px 10px;
+    }
+
+    .employee-sidebar-brand > div:last-child {
+        display: none;
+    }
+
+    .employee-nav-title {
+        display: none;
+    }
+
+    .employee-nav-link {
+        justify-content: center;
+
+        padding: 12px 8px;
+    }
+
+    .employee-nav-label {
+        display: none;
+    }
+
+    .employee-profile {
+        justify-content: center;
+    }
+
+    .employee-profile-details {
+        display: none;
+    }
+
+    .employee-signout {
+        justify-content: center;
+    }
+
+    .employee-signout span {
+        font-size: 18px;
+    }
+
+    .employee-signout {
+        font-size: 0;
+    }
+}
