@@ -275,77 +275,49 @@ function Posts() {
         }
 
     };
-
-
-    // ===============================
+    // ==============================
     // NEXT
     // ===============================
-
     const handleNext = () => {
-
         if (currentPage < totalPages) {
-
             setCurrentPage(
                 currentPage + 1
             );
-
         }
-
     };
-
-
     // ===============================
     // UI
-    // ===============================
-
+    // ==============================
     return (
-
         <div className="announcements-page">
-
-
             {/* =================================
                 PAGE HEADER
-            ================================= */}
-
+            =============================== */}
             <div className="announcements-header">
-
                 <div>
-
                     <div className="page-eyebrow">
                         COMMUNICATION
                     </div>
-
                     <h1 className="announcements-title">
                         Announcements
                     </h1>
-
                     <p className="announcements-subtitle">
                         Share important updates and
                         internal information with employees.
                     </p>
-
                 </div>
-
-
                 <div className="announcement-count">
-
                     <span className="count-number">
                         {totalPosts}
                     </span>
-
                     <span className="count-label">
                         Total Announcements
                     </span>
-
                 </div>
-
             </div>
-
-
             {/* =================================
                 ERROR
             ================================= */}
-
             {error && (
 
                 <div className="announcement-error">
